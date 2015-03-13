@@ -1,0 +1,36 @@
+{
+  "name": "Server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.10.2",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.1.1",
+    "domready": "^1.0.7",
+    "express": "~4.11.1",
+    "jade": "~1.9.1",
+    "mongodb": "*",
+    "mongoose": "*",
+    "morgan": "~1.5.1",
+    "path": "^0.11.14",
+    "serve-favicon": "~2.2.0",
+    "smoothie": "^1.27.0",
+    "socket.io": "^1.3.5"
+  },
+  "description": "test server for  lejendrone.dk",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DenAutonomePirat/Server.git"
+  },
+  "author": "Appelsinkanon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenAutonomePirat/Server/issues"
+  },
+  "homepage": "https://github.com/DenAutonomePirat/Server"
+}

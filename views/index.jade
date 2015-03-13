@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  script.
+    var targetRotation = 3.35;
+  #content
+    #mapdiv
+      #map
+        script(src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js")
+        script(src = "javascripts/map.js")
+    #videodiv
+      video#video(autoplay='',style='position: relative')
+        source(src='/feed/dummyPOV.mp4',type='video/mp4')
+      #model
+        #modelSTL
+          script(src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js")
+          script(src = "javascripts/STLLoader.js")
+          script(src = "javascripts/Mirror.js")
+          script(src = "javascripts/WaterShader.js")
+          script(src = "javascripts/stats.min.js")
+          script(src = "javascripts/model.js")
+        #chart
+          p Markørerne på kortet kan flyttes og når båden indhenter første waypoint indsættes ny markør på linien mellem sidste markør og målet.
+          p Video er dummy, og erstattes af feed fra båden.
+          p Modellen til venstre illustrerer hvorden båden hælder og hvilken retning den sejler.
+
+    #twitter
+      a.twitter-timeline(height='708',href='https://twitter.com/hashtag/denAutonomePirat', data-widget-id='575053991924666368') #denAutonomePirat Tweets
+        script.
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    
+    //#reddit
+      //script(src='//redditjs.com/subreddit.js' data-subreddit='drones' data-width='292' data-sort='new' data-theme='light')
+
+
+

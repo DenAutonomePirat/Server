@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+    link(rel='stylesheet', href='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css')
+    script(src = "/javascripts/chart.js")
+    script(src = "/javascripts/smoothie.js")    
+  body(onresize='resizeFunction()')
+    block content
